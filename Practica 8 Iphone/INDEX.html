@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sitio de iPhone</title>
+    <!-- Estilos basicos para mejorar la vista del sitio -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1c1c1e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #2c2c2e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #0071e3;
+        }
+
+        main {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #0071e3;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        /* Ajuste de tamano para las imagenes en la carpeta */
+        td img {
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: auto;
+        }
+
+        form p {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"], 
+        input[type="email"], 
+        input[type="password"], 
+        select,
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #0071e3;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        input[type="reset"] {
+            background-color: #888;
+        }
+
+        footer {
+            background-color: #1c1c1e;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado principal del sitio -->
+    <header>
+        <h1>IPHONE</h1>
+        <p>Pagina informativa sobre los telefonos iPhone</p>
+    </header>
+
+    <!-- Barra de navegacion con enlaces a cada seccion -->
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#modelos">Modelos</a></li>
+            <li><a href="#registro">Registro</a></li>
+            <li><a href="#contacto">Mas Informacion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Cuerpo principal con las secciones -->
+    <main>
+
+        <!-- Seccion de Inicio -->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>Bienvenido al sitio informativo de la marca iPhone.</p>
+            <p>iPhone es una linea de telefonos inteligentes disenados por Apple.<br>
+            Destacan por su diseno, rendimiento y el sistema operativo iOS.</p>
+        </section>
+
+        <!-- Seccion de Modelos Emblematicos con imagenes en la carpeta imagenes -->
+        <section id="modelos">
+            <h2>Modelos Emblematicos</h2>
+            <p>A continuacion se presentan algunos de los modelos mas representativos de la marca:</p>
+
+            <!-- Tabla para organizar los modelos y sus imagenes -->
+            <table>
+                <tr>
+                    <th>Modelo</th>
+                    <th>Imagen</th>
+                    <th>Descripcion</th>
+                </tr>
+                <tr>
+                    <td><b>iPhone Original (2007)</b></td>
+                    <td>
+                        <!-- Ruta a la carpeta imagenes -->
+                        <img src="imagenes/iphone-original.jpg" alt="iPhone Original">
+                    </td>
+                    <td>El primer iPhone presentado por Steve Jobs.</td>
+                </tr>
+                <tr>
+                    <td><b>iPhone X (2017)</b></td>
+                    <td>
+                        <!-- Ruta a la carpeta imagenes -->
+                        <img src="imagenes/iphone-x.jpg" alt="iPhone X">
+                    </td>
+                    <td>Introdujo la pantalla completa y Face ID.</td>
+                </tr>
+                <tr>
+                    <td><b>iPhone 15 Pro (2023)</b></td>
+                    <td>
+                        <!-- Ruta a la carpeta imagenes -->
+                        <img src="imagenes/iphone-15.jpg" alt="iPhone 15 Pro">
+                    </td>
+                    <td>Diseno fabricado en titanio y boton de accion.</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Seccion 1: Formulario de Registro (Crear Cuenta) -->
+        <section id="registro">
+            <h2>Formulario de Registro</h2>
+            <p>Registrate como nuevo usuario para crear una cuenta en el sitio:</p>
+
+            <form action="#" method="get">
+                <p>
+                    <label>Nombre completo:</label><br>
+                    <input type="text" name="nombre_registro" placeholder="Escribe tu nombre">
+                </p>
+
+                <p>
+                    <label>Correo electronico:</label><br>
+                    <input type="email" name="correo_registro" placeholder="ejemplo@correo.com">
+                </p>
+
+                <p>
+                    <label>Nombre de usuario:</label><br>
+                    <input type="text" name="usuario" placeholder="Crea un usuario">
+                </p>
+
+                <p>
+                    <label>Contrasena:</label><br>
+                    <input type="password" name="clave" placeholder="Crea tu contrasena">
+                </p>
+
+                <p>
+                    <label>Genero:</label><br>
+                    <input type="radio" name="genero" value="masculino"> Masculino
+                    <input type="radio" name="genero" value="femenino"> Femenino
+                    <input type="radio" name="genero" value="otro"> Otro
+                </p>
+
+                <p>
+                    <input type="checkbox" name="terminos" required> Acepto los terminos y condiciones del sitio
+                </p>
+
+                <p>
+                    <input type="submit" value="Crear Cuenta">
+                    <input type="reset" value="Limpiar">
+                </p>
+            </form>
+        </section>
+
+        <!-- Seccion 2: Formulario de Mas Informacion / Contacto -->
+        <section id="contacto">
+            <h2>Formulario de Mas Informacion</h2>
+            <p>Llena los siguientes datos si deseas recibir informacion sobre un modelo en especifico:</p>
+
+            <form action="#" method="get">
+                <p>
+                    <label>Nombre de contacto:</label><br>
+                    <input type="text" name="nombre_contacto" placeholder="Escribe tu nombre">
+                </p>
+
+                <p>
+                    <label>Correo electronico:</label><br>
+                    <input type="email" name="correo_contacto" placeholder="ejemplo@correo.com">
+                </p>
+
+                <p>
+                    <label>Modelo sobre el que deseas informes:</label><br>
+                    <select name="modelo_interes">
+                        <option value="iphone15">iPhone 15 Pro</option>
+                        <option value="iphone14">iPhone 14</option>
+                        <option value="iphonex">iPhone X</option>
+                        <option value="original">iPhone Original</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label>Dudas o comentarios:</label><br>
+                    <textarea name="comentarios" rows="4" placeholder="Escribe tus preguntas sobre la marca..."></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Solicitar Informacion">
+                    <input type="reset" value="Limpiar">
+                </p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer>
+        <p>YOSEF LEONARDO MATA PEREZ 5J</p>
+        <p>23308051280278</p>
+    </footer>
+
+</body>
+</html>
